@@ -15,9 +15,9 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <div className="app"> {/* This div has the 'app' class */}
+        <div className="app">
           <Navbar/>
-          <main className="main-content"> {/* This main has the 'main-content' class */}
+          <main className="main-content"> 
             <Routes>
               <Route path='/' Component={Home}/>
               <Route path='/menu' Component={Menu}/>
