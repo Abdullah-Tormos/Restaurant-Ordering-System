@@ -1,0 +1,142 @@
+/* styles/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: hsl(219, 91%, 25%);
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+.leftSide h2 {
+    color: white;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+
+.logo-link:hover h2 {
+    transform: scale(1.05);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin: -0.5rem -1rem;
+}
+
+.logo-link:hover h2 {
+    transform: scale(1.03);
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.rightSide a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.rightSide a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Hidden Links - Mobile Menu */
+.hiddenLinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: hsl(219, 91%, 25%);
+    width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+/* When openLinks is true - show the menu */
+.hiddenLinks#open {
+    display: flex;
+}
+
+/* When openLinks is false - hide the menu */
+.hiddenLinks#close {
+    display: none;
+}
+
+.hiddenLinks a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+    text-align: left;
+}
+
+.hiddenLinks a:last-child {
+    border-bottom: none;
+}
+
+.hiddenLinks a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .rightSide a {
+        display: none;
+    }
+    
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+    
+    .leftSide h2 {
+        font-size: 1.25rem;
+    }
+    
+    .hiddenLinks {
+        width: 180px;
+    }
+    
+    .hiddenLinks a {
+        padding: 0.875rem 1.25rem;
+    }
+}
