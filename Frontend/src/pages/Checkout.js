@@ -1,4 +1,3 @@
-// Checkout.js
 import { useContext, useState } from "react";
 import { CartContext } from "../components/CartContext";
 import { useNavigate } from "react-router-dom";
@@ -29,7 +28,6 @@ export default function Checkout() {
       return;
     }
 
-    // Save order to localStorage (simulated backend)
     const order = {
       customer: form,
       items: cart,
@@ -39,7 +37,7 @@ export default function Checkout() {
 
     localStorage.setItem("lastOrder", JSON.stringify(order));
     clearCart();
-    navigate("/confirmation"); // Redirect to home instead of non-existent confirmation page
+    navigate("/confirmation");
   };
 
   return (
@@ -47,7 +45,6 @@ export default function Checkout() {
       <h1 className="page-title">Checkout</h1>
 
       <div className="checkout-content">
-        {/* Order Summary */}
         <div className="order-summary card">
           <h2>Order Summary</h2>
           {cart.map((item) => (
@@ -63,7 +60,6 @@ export default function Checkout() {
           </h2>
         </div>
 
-        {/* Checkout Form */}
         <form onSubmit={handleSubmit} className="checkout-form card">
           <h2>Your Information</h2>
 

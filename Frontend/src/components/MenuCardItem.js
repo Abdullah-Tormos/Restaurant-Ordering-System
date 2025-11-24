@@ -1,4 +1,4 @@
-// components/MenuCardItem.js - Simple version with useState
+
 import React, { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
 
@@ -10,7 +10,6 @@ const MenuCardItem = ({ item }) => {
     addToCart(item);
     setShowToast(true);
     
-    // Auto hide after 2 seconds
     setTimeout(() => {
       setShowToast(false);
     }, 2000);
@@ -35,8 +34,7 @@ const MenuCardItem = ({ item }) => {
           </button>
         </div>
       </div>
-
-      {/* Simple toast for this component only */}
+      
       {showToast && (
         <div className="simple-toast">
           ✅ {item.name} added to cart!

@@ -1,5 +1,3 @@
-// components/Footer.js
-import { Link } from 'react-router-dom';
 import { 
   Facebook, 
   Instagram, 

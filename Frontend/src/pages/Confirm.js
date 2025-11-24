@@ -1,4 +1,4 @@
-// pages/Confirmation.js
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -6,13 +6,10 @@ const Confirmation = () => {
   const [order, setOrder] = useState(null);
 
   useEffect(() => {
-    // Get the order details from localStorage that was saved in Checkout.js
     const lastOrder = localStorage.getItem("lastOrder");
     if (lastOrder) {
       setOrder(JSON.parse(lastOrder));
       
-      // Optional: Clear the order from localStorage after displaying
-      // localStorage.removeItem("lastOrder");
     }
   }, []);
 
