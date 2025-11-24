@@ -24,14 +24,6 @@ Confirmation Page
 
 <img width="1915" height="910" alt="Screenshot 2025-11-24 172457" src="https://github.com/user-attachments/assets/f1eea58f-1f11-4a1b-a1ed-94fe42f7e9d6" />
 
-## 🛠️ Tech Stack
-
-- **Frontend:** React 18, React Router DOM
-- **Styling:** CSS3 with Flexbox/Grid
-- **Icons:** Material-UI Icons
-- **State Management:** React Context API
-- **Deployment:** Vercel/Netlify
-
 ## ✨ Features
 
 - 🍕 Browse menu items with categories
@@ -41,16 +33,3 @@ Confirmation Page
 - 🔔 Toast notifications
 - 📋 Order confirmation
 - 🚀 Fast and performant
-
-## 🏃‍♂️ Quick Start
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/tastebite-restaurant.git
-   cd tastebite-restaurant
