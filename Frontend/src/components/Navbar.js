@@ -22,6 +22,8 @@ const Navbar = () => {
                 <Link to="/"> Home </Link>
                 <Link to="/menu"> Menu </Link>
                 <Link to="/cart"> Cart </Link>
+                <Link to="/login"> Login </Link>
+                <Link to="/register"> Register </Link>
                 <button onClick={toggleNavbar} className="menu-button">
                     <ReOrderIcon/>
                 </button>
@@ -31,6 +33,8 @@ const Navbar = () => {
                 <Link to="/" onClick={() => setOpenLinks(false)}> Home </Link>
                 <Link to="/menu" onClick={() => setOpenLinks(false)}> Menu </Link>
                 <Link to="/cart" onClick={() => setOpenLinks(false)}> Cart </Link>
+                <Link to="/login" onClick={() => setOpenLinks(false)}> Login </Link>
+                <Link to="/register" onClick={() => setOpenLinks(false)}> Register </Link>
             </div> 
         </div>
     )

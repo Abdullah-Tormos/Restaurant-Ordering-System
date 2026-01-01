@@ -5,13 +5,15 @@ import Home from "./pages/Home.js";
 import Menu from "./pages/Menu.js";
 import Cart from "./pages/Cart.js";
 import './App.css'
-
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Checkout from './pages/Checkout.js';
 import Confirm from './pages/Confirm.js';
+import Login from './pages/Login.js'
+import Register from './pages/Register.js'
 
 function App() {
+
   return (
     <CartProvider>
       <Router>
@@ -24,6 +26,8 @@ function App() {
               <Route path='/cart' Component={Cart}/>
               <Route path='/checkout' Component={Checkout}/>
               <Route path='/confirmation' Component={Confirm}/>
+              <Route path='/login' Component={Login}/>
+              <Route path='/register' Component={Register}/>
             </Routes>
           </main>
           <Footer/>
