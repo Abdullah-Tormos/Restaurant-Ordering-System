@@ -1,4 +1,3 @@
-// frontend/src/pages/Register.js
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -21,7 +20,6 @@ const Register = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // In your Register.js component
 const handleSubmit = async (e) => {
   e.preventDefault();
   console.log('Submitting registration:', formData);
@@ -32,10 +30,10 @@ const handleSubmit = async (e) => {
       formData
     );
     console.log('Registration response:', response.data);
-    // Handle success
+
   } catch (error) {
     console.error('Registration error:', error.response?.data || error.message);
-    // Show error to user
+
   }
 };
 
